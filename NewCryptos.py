@@ -15,7 +15,7 @@ def smtp_gmail(text1):
     smtp_server = "smtp.gmail.com:587"
     email_from = "" #your gmail address
     email_to = "" #assuming your email
-    email_body = 'Subject: {}\n\n{}'.format('Top 10 Cryptos!', text1)
+    email_body = 'Subject: {}\n\n{}'.format('New Crypto!', text1)
     server = smtplib.SMTP(smtp_server)
     server.starttls()
     server.login(username, password)
